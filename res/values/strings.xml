@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Countdown Timer</string>
+<string name="tg_button_on">Immediate</string>
+<string name="tg_button_off">With Start</string>
+<string name="tg_button_321">3,2,1 Start</string>
+<string name="tg_button_none">No</string>
+<dimen name="time_button_height">60dp</dimen>
+<dimen name="time_button_width">60dp</dimen>
+<dimen name="time_button_text_size">24sp</dimen>
+</resources>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="match_parent" android:layout_width="match_parent">
+
+
+<LinearLayout android:id="@+id/LL_MainDisplay" 
+              android:visibility="visible" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content">
+
+	<TextView android:layout_height="wrap_content" 
+	          android:layout_width="fill_parent" 
+	          android:gravity="center_horizontal" 
+	          android:id="@+id/TimeView" 
+	          android:padding="5sp" 
+	          android:layout_gravity="center_vertical|center_horizontal" 
+	          android:text="00:00" 
+	          android:textSize="100sp">
+	</TextView>
+</LinearLayout>
+<LinearLayout 
+	android:layout_height="wrap_content" 
+    android:id="@+id/LL_MainButton" 
+    android:layout_width="wrap_content" 
+    android:layout_gravity="center_horizontal">
+	
+	<Button 
+		android:id="@+id/Bt_Main" 
+	    android:layout_height="wrap_content" 
+	    android:padding="7sp" 
+	    android:layout_margin="5sp" 
+	    android:layout_gravity="center" 
+	    android:layout_width="fill_parent" 
+	    android:width="150sp" 
+	    android:height="90sp" 
+	    android:text="Start" 
+	    android:textSize="40sp" 
+	    >
+	</Button>
+</LinearLayout>
+
+<TableLayout 
+	android:id="@+id/TL_SubButton" 
+	android:layout_height="wrap_content" 
+	android:layout_width="wrap_content" 
+	android:layout_gravity="center_horizontal" 
+	android:padding="10sp" android:paddingTop="30sp">
+
+	<TableRow 
+		android:id="@+id/TR_1" 
+		android:layout_height="wrap_content" 
+		android:layout_width="fill_parent">
+		
+		<Button 
+			android:id="@+id/Bt_00" 
+			android:text="10'" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:width="60sp"
+			android:height="60sp" 
+			android:textSize="20sp"> 
+		</Button>
+		<Button 
+			android:text="5'" 
+			android:id="@+id/Bt_01" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:width="60sp"
+			android:height="60sp" 
+			android:textSize="20sp"> 
+		</Button>
+		<Button 
+			android:text="3'" 
+			android:id="@+id/Bt_02" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:width="60sp"
+			android:height="60sp" 
+			android:textSize="20sp"> 
+		</Button>
+	</TableRow>
+	<TableRow 
+		android:id="@+id/TR_2" 
+		android:layout_height="wrap_content" 
+		android:layout_width="fill_parent">
+		<Button 
+			android:text="2'" 
+			android:id="@+id/Bt_10" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:width="60sp"
+			android:height="60sp" 
+			android:textSize="20sp"> 
+		</Button>
+		<Button 
+			android:text="1'" 
+			android:id="@+id/Bt_11" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:width="60sp"
+			android:height="60sp" 
+			android:textSize="20sp"> 
+		</Button>
+		<Button
+			android:id="@+id/Bt_12" 
+			android:text='30"'
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:width="60sp"
+			android:height="60sp" 
+			android:textSize="20sp"> 
+		</Button>
+	</TableRow>
+</TableLayout>
+
+<LinearLayout android:layout_height="wrap_content" 
+              android:id="@+id/LL_Bottom" 
+              android:layout_width="wrap_content" 
+              android:layout_gravity="center_horizontal" android:paddingTop="30sp">
+	<ToggleButton 
+		android:text="@+id/ToggleButton01" 
+		android:id="@+id/TG_immediate" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:width="120sp"
+		android:height="60sp" 
+		android:textOff="@string/tg_button_off" android:textOn="@string/tg_button_on">
+	</ToggleButton>
+</LinearLayout>
+
+
+</LinearLayout>

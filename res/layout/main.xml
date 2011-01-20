@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:paddingRight="10px"
+    android:paddingLeft="10px"
+    android:paddingTop="30sp"
+    android:background="@drawable/bg">
+
+	<LinearLayout 
+		android:id="@+id/LL_MainDisplay"
+	    android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+	    android:layout_marginLeft="7sp"
+	    android:layout_marginRight="7sp"
+		android:background="@drawable/lcd_background"
+		android:layout_marginBottom="20sp">
+
+		<TextView
+			android:id="@+id/TimeView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:padding="10sp"
+			android:textColor="#2e474c"
+			android:textSize="90sp"
+			android:text="00'00" >
+		</TextView>
+	</LinearLayout>
+
+
+
+	<ViewFlipper 
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/VF_switcher"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<!-- Start many button layout -->
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:id="@+id/LL_MainButton"
+			android:layout_width="fill_parent"
+			android:layout_gravity="center_horizontal">
+
+			<Button
+				android:id="@+id/Bt_Main"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:padding="7sp"
+				android:layout_margin="5sp"
+				android:layout_gravity="center"
+				android:height="110sp"
+				android:text="Start"
+				android:textSize="40sp"
+				android:background="@drawable/plastic_button"
+				android:textColor="#eee">
+			</Button>
+		</LinearLayout>
+
+
+			<TableLayout
+				android:id="@+id/TL_SubButton"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:paddingTop="10sp"
+				android:stretchColumns="*">
+
+				<TableRow
+					android:id="@+id/TR_1"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent">
+
+					<Button
+						android:id="@+id/Bt_00"
+						android:text="10'"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_margin="5sp"
+						android:height="60sp"
+						android:textSize="24sp"
+						android:textColor="#eee"
+						android:background="@drawable/plastic_button">
+					</Button>
+					<Button
+						android:text=" 5'"
+						android:id="@+id/Bt_01"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_margin="5sp"
+						android:height="60sp"
+						android:textSize="24sp"
+						android:background="@drawable/plastic_button"
+						android:textColor="#eee">
+					</Button>
+					<Button
+						android:text=" 3'"
+						android:id="@+id/Bt_02"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_margin="5sp"
+						android:height="60sp"
+						android:textSize="24sp"
+						android:background="@drawable/plastic_button"
+						android:textColor="#eee">
+					</Button>
+				</TableRow>
+				<TableRow
+					android:id="@+id/TR_2"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent">
+					<Button
+						android:text=" 2'"
+						android:id="@+id/Bt_10"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_margin="5sp"
+						android:height="60sp"
+						android:textSize="24sp"
+						android:background="@drawable/plastic_button"
+						android:textColor="#eee">
+					</Button>
+					<Button
+						android:text=" 1'"
+						android:id="@+id/Bt_11"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_margin="5sp"
+						android:height="60sp"
+						android:textSize="24sp"
+						android:background="@drawable/plastic_button"
+						android:textColor="#eee">
+					</Button>
+					<Button
+						android:id="@+id/Bt_12"
+						android:text='30"'
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_margin="5sp"
+						android:height="60sp"
+						android:textSize="24sp"
+						android:background="@drawable/plastic_button"
+						android:textColor="#eee">
+					</Button>
+				</TableRow>
+			</TableLayout>
+
+			<LinearLayout
+
+				android:id="@+id/LL_Bottom"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:paddingTop="10sp">
+
+				<ToggleButton
+					android:text="@+id/ToggleButton01"
+					android:id="@+id/TG_immediate"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_margin="5sp"
+					android:width="120sp"
+					android:height="60sp"
+					android:textOn="@string/tg_button_on"
+					android:textOff="@string/tg_button_on"
+					android:background="@drawable/btn_toggle_bg"
+					android:textColor="#eee">
+				</ToggleButton>
+				<ToggleButton
+					android:id="@+id/TG_countdown"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_margin="5sp"
+					android:width="120sp"
+					android:height="60sp"
+					android:text="@string/tg_button_321"
+					android:textOff="@string/tg_button_321"
+					android:textOn="@string/tg_button_321"
+					android:background="@drawable/btn_toggle_bg"
+					android:textColor="#eee">
+				</ToggleButton>
+			</LinearLayout>
+
+		</LinearLayout>
+		<!-- End many button layout -->
+
+		<!-- Start ONE button layout -->
+		<LinearLayout
+			android:id="@+id/LL_SubButton"
+			android:orientation="vertical"
+			android:layout_height="fill_parent"
+			android:layout_width="fill_parent"
+			android:layout_marginBottom="30sp"			
+			android:background="@drawable/bg">
+
+			<Button
+				android:id="@+id/Bt_Sub_Main"
+				android:layout_height="fill_parent"
+				android:layout_width="fill_parent"
+				android:padding="7sp"
+				android:layout_margin="5sp"
+				android:text="Start"
+				android:textSize="40sp"
+				android:background="@drawable/plastic_button"
+				android:textColor="#eee">
+			</Button>
+		</LinearLayout>
+
+	</ViewFlipper>
+</LinearLayout>
+		
+
